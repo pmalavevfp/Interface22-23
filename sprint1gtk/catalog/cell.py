@@ -32,39 +32,37 @@ class Cell(Gtk.EventBox):
     def GetImage (self, name):
         imagen=Gtk.Image()
         pixbuf1 = None
-        if self.name == "goku":
-            imagen.set_from_pixbuf(self.image.get_pixbuf())
-            print(imagen)
-            #pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/Goku.jfif", 200, 200, False)
+        if self.name == "GoKuu":
+            pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/Goku.jfif", 200, 200, False)
             #imagen.set_from_pixbuf(pixbuf1)
-        elif self.name == "loqui":
+        elif self.name == "Loquillo":
             pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/images.jfif", 200, 200, False)
             #imagen.set_from_pixbuf(pixbuf1)
-        elif self.name=="bat":
+        elif self.name=="Batman":
             pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/images (1).jfif", 200, 200, False)
             #imagen.set_from_pixbuf(pixbuf1)
-        elif self.name =="gok":
+        elif self.name =="GoKu":
             pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/cojin-3d-goku-dragon-ball.jpg", 200, 200,
                                                             False)
             #imagen.set_from_pixbuf(pixbuf1)
-        elif self.name =="naru":
+        elif self.name =="Naruto":
             pixbuf1 = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/naruto.jpg", 200, 200, False)
             #imagen.set_from_pixbuf(pixbuf1)
-        #imagen.set_from_pixbuf(pixbuf1)
+        imagen.set_from_pixbuf(pixbuf1)
         return imagen
 
     def GetDescrip(self, name):
         self.descrip = Gtk.Label()
 
-        if self.name == "goku":
-            self.descrip = Gtk.Label("111111111")
-        elif self.name == "loqui":
+        if self.name == "GoKuu":
+            self.descrip = ("111111111")
+        elif self.name == "Loquillo":
             self.descrip ="222222222"
-        elif self.name == "bat":
+        elif self.name == "Batman":
             self.descrip="333333333"
-        elif self.name == "gok":
+        elif self.name == "GoKu":
             self.descrip="4444444444"
-        elif self.name == "naru":
+        elif self.name == "Naruto":
             self.descrip="55555555"
         print("gD", self.descrip)
         return self.descrip

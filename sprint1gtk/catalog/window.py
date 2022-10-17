@@ -31,7 +31,7 @@ class MainWindow(Gtk.Window):
         goku = Gtk.Image()
         pixbuf = GdkPixbuf.Pixbuf.new_from_file_at_scale("data/unedited/Goku.jfif", 200, 200, False)
         goku.set_from_pixbuf(pixbuf)
-        cell_one=Cell("GoKu", goku)
+        cell_one=Cell("GoKuu", goku)
         self.flowbox.add(cell_one)
 
 
