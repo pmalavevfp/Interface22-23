@@ -2,19 +2,19 @@
   {"name":"AdventureTime",
    "description":"Serie animada de televisión creada por Pendleton Ward para Cartoon Network",
    "image_url":"https://github.com/pmalavevfp/Interface22-23/blob/main/API-REST/Imagenes/adventuretime-200x200.png"  
-  }
+  }, 
   {"name":"SpongeBob",
    "description":"Serie de televisión de dibujos animados creada por el animador, caricaturista y biólogo marino Stephen Hillenburg para la cadena Nickelodeon,",
    "image_url":"https://github.com/pmalavevfp/Interface22-23/blob/main/API-REST/Imagenes/Bob.png"  
-  }
+  }, 
   {"name":"Tom&Jerry",
    "description":"Dibujo animado son dos personajes animados, un gato y un ratón, creados por William Hanna y Joseph Barbera",
    "image_url":"https://github.com/pmalavevfp/Interface22-23/blob/main/API-REST/Imagenes/tom%26Jerry.jpg"  
-  }
+  }, 
   {"name":"Mickey-Mouse",
    "description":"El dibujo animado creado por Walt Disney y es el emblema de la compania Disney",
    "image_url":"https://github.com/pmalavevfp/Interface22-23/blob/main/API-REST/Imagenes/Mickey-Mouse.png"  
-  }
+  }, 
   {"name":"Robin",
    "description":"Companero de Batmanm comocido como joven maravilla",
    "image_url":"https://github.com/pmalavevfp/Interface22-23/blob/main/API-REST/Imagenes/robin.png"  
