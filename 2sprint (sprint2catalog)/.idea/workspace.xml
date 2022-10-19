@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3608cd3-560b-4a8e-8d7d-da33f08f79b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2sprint.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/cell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/Bob.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/Lo-Romero-Golf-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/Mickey-Mouse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/SanRoque-Sevilla.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/Scooby-Doo.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/adventuretime-200x200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/robin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/tapir.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/edited/tom&amp;Jerry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/unedited/GoKu.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/unedited/Naruto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/unedited/cojin-3d-goku-dragon-ball.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/unedited/images (1).jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/data/unedited/images.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/detail_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/wondow-old.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/2sprint.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../2sprint/.idea/2sprint.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2sprint/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/cell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/detail_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/load_window.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../2sprint/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2sprint/window.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2GLYrmOGOjY5azO53QFdTDTJpEa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="2sprint (sprint2catalog)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3608cd3-560b-4a8e-8d7d-da33f08f79b2" name="Changes" comment="" />
+      <created>1666169531411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666169531411</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
