@@ -32,7 +32,8 @@ class LoadWindow (Gtk.Window):
     def start_main_window(self, loaded_items_list):
         win = MainWindow(loaded_items_list)
         win.show_all()
-        self.disconnect_by_func(Gtk.main_quit())
+
+        self.disconnect_by_func(Gtk.main_quit)
         self.close()
 
     """Para la petición HTTP desde un hilo secundario. Para esto Usamos la librería 
@@ -49,14 +50,14 @@ class LoadWindow (Gtk.Window):
         json_list=response.json()
 
         """Se crea esta rutina para crear una nueva lista con los datos de URL de la imagen
-    la descripción y el nombre de la figura"""
+    la descripción y el nombre de la figura obtenidos del API_Rest"""
 
         #se crea una lista
         result =[]
 
         for json_item in json_list:
             name=json_item.get ("name")
-            description=json_item.get ("descripcion")
+            description=json_item.get ("description")
             image_url= json_item.get("image_url")
             r=requests.get(image_url,stream=True)
             with open ("temp.png", "wb") as f:
@@ -66,5 +67,5 @@ class LoadWindow (Gtk.Window):
 
             #pasando la lista de resultado al hilo ppal
 
-            GLib.idle_add(self.start_main_window, result)
+        GLib.idle_add(self.start_main_window, result)
 
