@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3608cd3-560b-4a8e-8d7d-da33f08f79b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/temp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/Bob.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/Lo-Romero-Golf-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/Mickey-Mouse.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/SanRoque-Sevilla.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/Scooby-Doo.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/adventuretime-200x200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/robin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/tapir.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/edited/tom&amp;Jerry.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/unedited/GoKu.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/unedited/Naruto.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/unedited/cojin-3d-goku-dragon-ball.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/unedited/images (1).jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/unedited/images.jfif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detail_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/detail_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/load_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/load_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wondow-old.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/2sprint.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/cell.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/detail_window.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/load_window.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2sprint/window.py" beforeDir="false" />
-    </list>
+    <list default="true" id="e3608cd3-560b-4a8e-8d7d-da33f08f79b2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
