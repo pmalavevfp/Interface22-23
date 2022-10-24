@@ -12,10 +12,10 @@ class LoadWindow (Gtk.Window):
     box=Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20)
 
 
-    """Se crea un constructor para general la vetava con el titulo
-    con la activacion del cierre de ventana y programa que la llama 
-    por el destroy, y se genera el spinner para mostrar que se esta cargando 
-    las imagenes"""
+    #Se crea un constructor para general la vetava con el titulo
+    # con la activacion del cierre de ventana y programa que la llama
+    # por el destroy, y se genera el spinner para mostrar que se esta cargando
+    # las imagenes"""
     def __init__ (self):
         super().__init__(title="Cargando")
         self.connect("destroy", Gtk.main_quit)
@@ -36,21 +36,21 @@ class LoadWindow (Gtk.Window):
         self.disconnect_by_func(Gtk.main_quit)
         self.close()
 
-    """Para la petición HTTP desde un hilo secundario. Para esto Usamos la librería 
-“threading” para ello"""
+    #Para la petición HTTP desde un hilo secundario. Para esto Usamos la librería
+    # “threading” para ello
 
     def launch_load (self):
         thread=threading.Thread(target=self.load_json, args=())
         thread.start()
 
-    """para obtener el archivo JSON de la URL del API-Rest. basta para enviar la 
-    petición GET, que se encapsula a través de esta función """
+    #para obtener el archivo JSON de la URL del API-Rest. basta para enviar la petición GET,
+    # que se encapsula a través de esta función """
     def load_json (self):
         response=requests.get ("https://raw.githubusercontent.com/pmalavevfp/Interface22-23/main/API-REST/catalog.json")
         json_list=response.json()
 
-        """Se crea esta rutina para crear una nueva lista con los datos de URL de la imagen
-    la descripción y el nombre de la figura obtenidos del API_Rest"""
+        #Se crea esta rutina para crear una nueva lista con los datos de URL de la imagen
+        # la descripción y el nombre de la figura obtenidos del API_Rest
 
         #se crea una lista
         result =[]
@@ -66,6 +66,7 @@ class LoadWindow (Gtk.Window):
             result.append({"name":name, "description":description, "gtk_image":image})
 
             #pasando la lista de resultado al hilo ppal
+
 
         GLib.idle_add(self.start_main_window, result)
 

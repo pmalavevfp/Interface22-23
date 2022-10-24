@@ -26,6 +26,7 @@ class MainWindow(Gtk.Window):
         scrolled.add(self.flowbox)
         self.add(scrolled)
 
+        #lectura de la data recuperada del API-Rest para leer una a una lainformacion para crar la ventana ppal
         for item in data_source:
             cell_xx = Cell(item.get("name"), item.get("gtk_image"), item.get("description"))
             self.flowbox.add(cell_xx)
