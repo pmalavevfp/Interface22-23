@@ -14,7 +14,7 @@ class MainWindow(Gtk.Window):
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(15)
         self.set_default_size(400, 300)
-        self.set_position(Gtk.WindowPosition.CENTER)
+        self.set_position(Gtk.WindowPosition.CENTER)  #En esta linea se centra la posición de la ventana en la pantalla
 
         header = Gtk.HeaderBar(title="Cartoon muestra No.2")
         header.set_subtitle("Catalogo para el ejercicio 2")

@@ -22,7 +22,7 @@ class LoadWindow (Gtk.Window):
         self.set_border_width(60)
         self.set_resizable(False)
         self.spinner.props.active =True
-        self.set_position(Gtk.WindowPosition.CENTER)
+        self.set_position(Gtk.WindowPosition.CENTER) #En esta linea se centra la posición de la ventana en la pantalla
         self.box.pack_start(self.label, False, False, 0)
         self.box.pack_start(self.spinner, False, False, 0)
         self.add(self.box)
