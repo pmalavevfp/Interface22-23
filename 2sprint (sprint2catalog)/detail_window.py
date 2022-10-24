@@ -14,7 +14,7 @@ class Detail (Gtk.Window):
         self.add(box)
         box.pack_start(image, True, True, 0)
         box.pack_start(Gtk.Label(descrip), True, True, 0)
-
+        self.set_position(Gtk.WindowPosition.CENTER)
         self.connect("destroy", Gtk.main_quit) #se activa esta propiedad para poder eliminar la ventana cunado se desee
 
 

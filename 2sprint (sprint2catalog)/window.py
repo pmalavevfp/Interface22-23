@@ -13,7 +13,8 @@ class MainWindow(Gtk.Window):
         super().__init__(title="Catálogo de Cartoon")
         self.connect("destroy", Gtk.main_quit)
         self.set_border_width(15)
-        self.set_default_size(400, 400)
+        self.set_default_size(400, 300)
+        self.set_position(Gtk.WindowPosition.CENTER)
 
         header = Gtk.HeaderBar(title="Cartoon muestra No.2")
         header.set_subtitle("Catalogo para el ejercicio 2")

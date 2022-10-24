@@ -9,7 +9,7 @@ from window import MainWindow
 class LoadWindow (Gtk.Window):
     label = Gtk.Label("Cargando elementos ...")
     spinner=Gtk.Spinner()
-    box=Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=20)
+    box=Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=10)
 
 
     #Se crea un constructor para general la vetava con el titulo
@@ -22,7 +22,7 @@ class LoadWindow (Gtk.Window):
         self.set_border_width(60)
         self.set_resizable(False)
         self.spinner.props.active =True
-
+        self.set_position(Gtk.WindowPosition.CENTER)
         self.box.pack_start(self.label, False, False, 0)
         self.box.pack_start(self.spinner, False, False, 0)
         self.add(self.box)
