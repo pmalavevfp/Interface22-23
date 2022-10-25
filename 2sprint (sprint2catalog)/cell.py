@@ -23,6 +23,7 @@ class Cell(Gtk.EventBox):
         imagen = Gtk.Image()        #declaro un nuvoa atributo para redirecionar la imagen que proviene de
                                     # la acción clickear en la ventana ppl
         imagen.set_from_pixbuf(self.image.get_pixbuf())
+
         winD = Detail(imagen, self.name, self.descrip)  #  se envia los atributos para que se genere la
                                                         # ventana individul de don se clickeo
         winD.show_all()
