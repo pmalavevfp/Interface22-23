@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/home"
+            android:title="Home"
+            android:icon="@drawable/ic_baseline_home_24">
+        </item>
+        <item
+            android:id="@+id/activity_1"
+            android:title="Detail Clothing"
+            android:icon="@drawable/ic_baseline_info_24">
+        </item>
+        <item
+            android:id="@+id/activity_2"
+            android:title="About Designer"
+            android:icon="@drawable/ic_baseline_info_24">
+        </item>
+
+        <item
+            android:title="Comunication">
+            <menu>
+                <item
+                    android:id="@+id/help"
+                    android:title="Help"
+                    android:icon="@drawable/ic_baseline_help_24"></item>
+                <item
+                    android:id="@+id/privacy"
+                    android:title="Privacy Policies"
+                    android:icon="@drawable/ic_baseline_privacy_tip_24"></item>
+            </menu>
+
+        </item>
+    </group>
+</menu>
