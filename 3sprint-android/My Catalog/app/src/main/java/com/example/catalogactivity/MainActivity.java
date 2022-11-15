@@ -32,22 +32,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        drawerLayout=findViewById(R.id.drawer_layout);
-        navigationView=findViewById(R.id.navigator_layout);
-        toolbar=findViewById(R.id.toolbar_id);
-        setSupportActionBar(toolbar);
-
-        menu=navigationView.getMenu();
-        navigationView.getHeaderView(0);
-        navigationView.bringToFront();
-
-
-        ActionBarDrawerToggle toggle= new ActionBarDrawerToggle( this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-        navigationView.setNavigationItemSelectedListener(this);
-        navigationView.setCheckedItem(R.id.home);
-
 
 
 
