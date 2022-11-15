@@ -20,7 +20,7 @@ public class Catalog_Activity extends Fragment {
         super.onCreate(savedInstanceState);
         View view= inflater.inflate(R.layout.catalog_activity, container, false);
         Context context =view.getContext();
-        button= view.findViewById(R.id.);
+        button= view.findViewById(R.id.detail);
         /*// Inflate the layout for this fragment
         return inflater.inflate(R.layout.catalog_activity, container, false);
 

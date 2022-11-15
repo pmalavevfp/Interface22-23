@@ -16,10 +16,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener{
+
 
     private Context context=this;
     private DrawerLayout drawerLayout;
@@ -32,6 +35,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        drawerLayout=findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigator_layout);
+        toolbar = findViewById(R.id.toolbar_id);
+        setSupportActionBar(toolbar);
+
+        /*menu=navigationView.getMenu();
+        navigationView.getHeaderView(0);
+        navigationView.bringToFront();*/
+
+        MenuItem menuItem = navigationView.getMenu().getItem(0);
+        onNavigationItemSelected(menuItem);
+        menuItem.setChecked(true);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
+        //navigationView.setCheckedItem(R.id.drawer_layout);
+
+
+        /*MenuItem menuItem = navigationView.getMenu().getItem(0);
+        onNavigationItemSelected(menuItem);
+        menuItem.setChecked(true);
+
+        drawerLayout.addDrawerListener(this);
+
+        View header = navigationView.getHeaderView(0);
+        header.findViewById(R.id.h).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(HomeActivity.this, getString(R.string.title_click),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });*/
 
 
 
@@ -48,14 +88,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.home:
-                drawerLayout.closeDrawer(GravityCompat.START);
+                drawerLayout.close();
+                Fragment fragment_Catalog=new Catalog_Activity();
+                getSupportFragmentManager().beginTransaction().replace(R.id.catalog_activity,fragment_Catalog).commit();
                 break;
            case R.id.activity_2:
-                startActivity(new Intent(MainActivity.this,AboutActivity.class));
-                break;
+               drawerLayout.closeDrawer(GravityCompat.START);
+               Fragment fragment_About =new About();
+               getSupportFragmentManager().beginTransaction().replace(R.id.catalog_activity,fragment_About).commit();
+               break;
 
             case R.id.activity_1:
                 Intent i = new Intent(this, DetailActivity.class);
@@ -81,4 +134,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         return false;
     }
+
 }
