@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3608cd3-560b-4a8e-8d7d-da33f08f79b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/java/com/example/myothercatalog/Moc_Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/res/layout/moc_comic_cell.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/java/com/example/myothercatalog/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/java/com/example/myothercatalog/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../4sprint-android/MyOtherCatalog/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
