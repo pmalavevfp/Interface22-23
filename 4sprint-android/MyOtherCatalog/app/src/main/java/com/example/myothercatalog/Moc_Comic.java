@@ -11,7 +11,9 @@ public class Moc_Comic {
 
 
     public Moc_Comic (JSONObject json) throws JSONException {
-        this.id= json.getInt("id");
+
+
+        //this.id= json.getInt("id");
         this.photoName = json.getString("name");
         this.urlPhoto = json.getString("videoUrl");
         this.photoDescrip= json.getString("photoDescrip");

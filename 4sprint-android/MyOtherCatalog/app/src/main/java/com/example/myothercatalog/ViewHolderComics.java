@@ -2,6 +2,7 @@ package com.example.myothercatalog;
 
 import android.content.Context;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -11,11 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 public class ViewHolderComics extends RecyclerView.ViewHolder{
 
     private TextView comicsTextView;
+    private ImageView mImagen;
+    private TextView nameImg;
+    private TextView descpImg;
     private Moc_Comic comic;
 
     public ViewHolderComics(@NonNull View itemView) {
         super(itemView);
         comicsTextView = itemView.findViewById(R.id.recyclerViewComics);
+        mImagen=itemView.findViewById(R.id.imagen_View);
+        nameImg=itemView.findViewById(R.id.text_name);
+        descpImg=itemView.findViewById(R.id.text_descrip);
         //segun el video aqui faltan 2 variable mas para para el nombre y la descripción
         // minuto 21 del video
         itemView.setOnClickListener(new View.OnClickListener() {
