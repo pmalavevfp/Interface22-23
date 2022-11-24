@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setClips(ListMoc comics) {
         this.comics = comics;
-        AdapterMoc myAdapter = new AdapterMoc(this.comics);
+        AdapterComics myAdapter = new AdapterComics(this.comics);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
@@ -48,12 +48,16 @@ public class MainActivity extends AppCompatActivity {
         JsonObjectRequest queue= new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
+                for (int i=0; i<response.length();i++){
+                    JSONObject comicsObject = response.getJSONObject(i);
+                    Moc_Comic comic = new Moc_Comic():
 
+                }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                
+
             }
         });
     }
