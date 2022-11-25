@@ -1,4 +1,5 @@
-package com.example.myothercatalog;
+package com.example.myothercatalog_1;
+
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 public class AdapterComics extends RecyclerView.Adapter<AdapterComics.ViewHolder> {
+
     LayoutInflater inflater;
     List<Comics> comics;
 
@@ -68,4 +70,5 @@ public class AdapterComics extends RecyclerView.Adapter<AdapterComics.ViewHolder
             });
         }
     }
+
 }
