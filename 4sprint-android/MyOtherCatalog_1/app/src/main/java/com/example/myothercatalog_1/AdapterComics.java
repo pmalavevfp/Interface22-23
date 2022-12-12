@@ -49,13 +49,14 @@ public class AdapterComics extends RecyclerView.Adapter<AdapterComics.ViewHolder
         return comics.size();
     }
 
+
+
     public  class ViewHolder extends  RecyclerView.ViewHolder{
         TextView photoName,photoDescrip;
         ImageView photoUrl;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             photoName = itemView.findViewById(R.id.text_name);
             photoDescrip = itemView.findViewById(R.id.text_descrip);
             photoUrl = itemView.findViewById(R.id.imagen_View);
