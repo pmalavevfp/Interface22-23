@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Calculator_Interf</string>
+    <string name="app_name">
+        Calculator_Interf</string>
 </resources>
