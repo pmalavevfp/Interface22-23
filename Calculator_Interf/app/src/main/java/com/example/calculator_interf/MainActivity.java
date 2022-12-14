@@ -9,8 +9,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView screen;
-    private String input_1, input_2, input_3, input_4, answer;
-    private String data="0";
+    private static String input_1="0", input_2="0", input_3="0", input_4="0", answer;
+    private static String data="0";
+    private boolean new_data=true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,15 +22,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View v) {
-        screen.setText(data);
         Button btn=(Button) v;
-        //data= btn.getText().toString();
         switch (v.getId()){
             case (R.id.enter):
-                input_4 = input_3;
-                input_3 = input_2;
-                input_2 = input_1;
-                input_1 = data;
+                intro_data(data);
                 break;
             case (R.id.chs):
                 data= String.valueOf(-1*(Double.parseDouble(data)));
@@ -37,45 +33,21 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.eex):
                 break;
             case (R.id.clx):
-                if (input_1.equals(data)){
+                if (data.equals(input_1)){
                     data="0";
-                    input_1="0";
-                } else {
-                String new_string=data.substring(0,data.length()-1);
-                data=new_string;}
-                break;
-            case (R.id.one):
-                data+="1";
-                break;
-            case (R.id.two):
-                data+="2";
-                break;
-            case (R.id.three):
-                data+="3";
-                break;
-            case (R.id.four):
-                data+="4";
-                break;
-            case (R.id.five):
-                data+="5";
-                break;
-            case (R.id.six):
-                data+="6";
-                break;
-            case (R.id.seven):
-                data+="7";
-                break;
-            case (R.id.eight):
-                data+="8";
-                break;
-            case (R.id.nine):
-                data+="9";
-                break;
-            case (R.id.zero):
-                data+="0";
+                    new_data = true;
+                }else {
+                    if (data.length()==1) {
+                        data = "0";
+                        new_data = true;
+                    }else{
+                        data = data.substring(0, data.length() - 1);
+                }}
                 break;
             case (R.id.dot):
-                data+=",";
+                if (!(data.substring(data.length()-1)).equals(".")) {
+                    data+=".";}
+                //screen.setText(data.substring(data.length()-2));
                 break;
             case (R.id.r_s):
                 break;
@@ -92,11 +64,26 @@ public class MainActivity extends AppCompatActivity {
                 solve(4);
                 break;
             default:
-               // data+= btn.getText().toString();
+                if (new_data){
+                    if (data.equals("0")||(data.equals(input_1))){
+                        data="";
+                    }
+                    new_data=false;}
+               data+= btn.getText().toString();
         }
         screen.setText(data);
     }
+
+    private void intro_data(String data) {
+        input_4 = input_3;
+        input_3 = input_2;
+        input_2 = input_1;
+        input_1 = data;
+        new_data=true;
+    }
+
     public void solve(int x){
+        intro_data(data);
         switch (x){
             case 1:
                 data=String.valueOf((Double.parseDouble(input_1))-(Double.parseDouble(input_2)));
@@ -108,17 +95,21 @@ public class MainActivity extends AppCompatActivity {
                 data=String.valueOf((Double.parseDouble(input_1))*(Double.parseDouble(input_2)));
                 break;
             case 4:
-                //answer=String.valueOf((Double.parseDouble(input_1))/(Double.parseDouble(input_2)));
-                data=(Double.parseDouble(input_1))/(Double.parseDouble(input_2))+"";
+                //answer=String.valueOf((Double.parseDouble(data))/(Double.parseDouble(input_2)));
+                try {
+                data = (Double.parseDouble(input_1)) / (Double.parseDouble(input_2)) + "";
+                }catch (Exception e) {
+                    screen.setText("ERROR ---No se puede dividir entre 0");
+                }
                 break;
         }
-        input_4="";
-        input_3=input_4;
+        input_1=input_2;
         input_2=input_3;
-        input_1=data;
+        input_3=input_4;
+        input_4="0";
 
-        screen.setText(input_1);
-        data="0";
+
+        screen.setText(data);
 
     }
 }

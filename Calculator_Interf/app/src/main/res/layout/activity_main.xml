@@ -92,6 +92,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eex"
@@ -104,6 +105,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/clx"
@@ -116,6 +118,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
     </LinearLayout>
 
@@ -137,6 +140,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seven"
@@ -149,6 +153,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/eight"
@@ -161,6 +166,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nine"
@@ -173,6 +179,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
     </LinearLayout>
 
@@ -194,6 +201,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/four"
@@ -206,6 +214,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/five"
@@ -218,6 +227,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/six"
@@ -230,6 +240,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
     </LinearLayout>
 
@@ -251,6 +262,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/one"
@@ -263,6 +275,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/two"
@@ -275,6 +288,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/three"
@@ -287,6 +301,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
     </LinearLayout>
 
@@ -308,6 +323,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/zero"
@@ -320,6 +336,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/dot"
@@ -332,6 +349,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/r_s"
@@ -344,6 +362,7 @@
             android:textColor="@color/white"
             android:background="@drawable/botonl"
             android:layout_margin="5dp"
+            android:onClick="onClick"
             />
     </LinearLayout>
 
