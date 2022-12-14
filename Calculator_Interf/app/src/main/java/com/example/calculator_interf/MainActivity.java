@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         input_2 = input_1;
         input_1 = data;
         new_data=true;
+        data="0";
     }
 
     public void solve(int x){
