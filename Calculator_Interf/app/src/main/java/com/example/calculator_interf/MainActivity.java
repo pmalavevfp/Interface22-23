@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView screen;
     private static String input_1="0", input_2="0", input_3="0", input_4="0", answer;
     private static String data="0";
-    private boolean new_data=true;
+    private boolean new_data=true, use_solve=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
             case (R.id.eex):
                 break;
             case (R.id.clx):
-                if (data.equals(input_1)){
+                if (data.equals(input_1)||use_solve){
                     data="0";
                     new_data = true;
+                    use_solve=false;
                 }else {
                     if (data.length()==1) {
                         data = "0";
@@ -65,10 +66,11 @@ public class MainActivity extends AppCompatActivity {
                 break;
             default:
                 if (new_data){
-                    if (data.equals("0")||(data.equals(input_1))){
+                    if (data.equals("0")||(data.equals(input_1))||use_solve){
                         data="";
                     }
-                    new_data=false;}
+                    new_data=false;
+                use_solve=false;}
                data+= btn.getText().toString();
         }
         screen.setText(data);
@@ -84,21 +86,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void solve(int x){
-        intro_data(data);
+        //intro_data(data);
+        use_solve=true;
         switch (x){
             case 1:
-                data=String.valueOf((Double.parseDouble(input_1))-(Double.parseDouble(input_2)));
+                data=String.valueOf((Double.parseDouble(input_1))-(Double.parseDouble(data)));
                 break;
             case 2:
-                data=String.valueOf((Double.parseDouble(input_1))+(Double.parseDouble(input_2)));
+                data=String.valueOf((Double.parseDouble(input_1))+(Double.parseDouble(data)));
                 break;
             case 3:
-                data=String.valueOf((Double.parseDouble(input_1))*(Double.parseDouble(input_2)));
+                data=String.valueOf((Double.parseDouble(input_1))*(Double.parseDouble(data)));
                 break;
             case 4:
-                //answer=String.valueOf((Double.parseDouble(data))/(Double.parseDouble(input_2)));
-                try {
-                data = (Double.parseDouble(input_1)) / (Double.parseDouble(input_2)) + "";
+               try {
+                data = (Double.parseDouble(input_1)) / (Double.parseDouble(data)) + "";
                 }catch (Exception e) {
                     screen.setText("ERROR ---No se puede dividir entre 0");
                 }
@@ -108,7 +110,6 @@ public class MainActivity extends AppCompatActivity {
         input_2=input_3;
         input_3=input_4;
         input_4="0";
-
 
         screen.setText(data);
 
