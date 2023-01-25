@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fragm_RView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="rv_delete">Eliminar este Registro</string>
+    <string name="rv_change">Modificar este Registro</string>
+
+</resources>

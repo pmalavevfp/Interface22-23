@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Other Catalog</string>
+
+    <string name="rv_delete">Eliminar este Registro</string>
+    <string name="rv_change">Modificar este Registro</string>
+
 </resources>

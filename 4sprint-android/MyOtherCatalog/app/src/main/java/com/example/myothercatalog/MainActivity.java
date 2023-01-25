@@ -1,11 +1,15 @@
 package com.example.myothercatalog;
 
+import static androidx.constraintlayout.widget.StateSet.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -38,8 +42,33 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recyclerViewComics);
         comics = new ArrayList<>();
 
+        //esto es del menu contextual
+        registerForContextMenu(recyclerView);
+
         parseJsonComics();
 
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        int position = -1;
+        try {
+            position = ((AdapterComics)recyclerView.getAdapter()).getPosition();
+        } catch (Exception e) {
+            Log.d(TAG, e.getLocalizedMessage(), e);
+            return super.onContextItemSelected(item);
+        }
+        switch (item.getItemId()) {
+            case R.id.action_rv_change:
+                // do your stuff
+                Toast.makeText(this,"Se modifica este item", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_rv_delete:
+                // do your stuff
+                Toast.makeText(this,"Se elimina este item", Toast.LENGTH_LONG).show();
+                break;
+        }
+        return super.onContextItemSelected(item);
     }
 
     private void  parseJsonComics(){
